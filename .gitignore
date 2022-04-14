@@ -1,0 +1,6 @@
+__pycache__
+.venv
+.idea
+.pytest_cache
+Config/wallet.yml
+Report
