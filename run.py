@@ -13,5 +13,5 @@ import datetime
 if __name__ == '__main__':
     now=datetime.datetime.now().strftime('%Y%m%d%H%M%S') 
     pytest.main(['-s','./Test/TestCase/','--alluredir',f'./Report/{now}'])
-    print(f'报告路径：https://github.com/lisa1213001/dodo-test/Report/{now}')
+    print(f'报告路径：https://github.com/lisa1213001/dodo-test/tree/main/Report/{now}')
     # os.system('allure serve ./Report/allure_report')
