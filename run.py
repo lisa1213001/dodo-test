@@ -20,6 +20,6 @@ if __name__ == '__main__':
     report_dir = os.path.join(cwd, f'Report/{now}')
     report_html_dir = os.path.join(cwd, f'docs/{now}')
     pytest.main(['-s','./Test/TestCase/','--alluredir',report_dir])
-    print(f'报告路径：https://lisa1213001.github.io/dodo-test  (需要等待一段时间报告才会生成)')
+    print(f'报告路径：https://lisa1213001.github.io/dodo-test/{now}    (需要等待一段时间报告才会生成)')
     os.system(f'allure generate {report_dir} -o {report_html_dir} --clean')
     display.stop()
