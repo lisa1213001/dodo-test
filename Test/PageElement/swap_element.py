@@ -14,7 +14,7 @@ class SwapElement:
         return ele
 
     def find_tokenlist_search1(self):
-        ele = Base.find_element('xpath,//input[@placeholder="输入代币简写或合约地址"]',self.driver)
+        ele = Base.find_element('xpath,/html/body/div[3]/div[3]/div[2]/div/div[1]/div/input',self.driver)
         return ele
     def find_choose_USDT(self):
         ele = Base.find_element('xpath,//span[@title="USDT Token"]',self.driver)
@@ -29,7 +29,7 @@ class SwapElement:
         return ele
 
     def find_tokenlist_search2(self):
-        ele = Base.find_element('xpath,//input[@placeholder="输入代币简写或合约地址"]',self.driver)
+        ele = Base.find_element('xpath,/html/body/div[3]/div[3]/div[2]/div/div[1]/div/input',self.driver)
         return ele
 
     def find_choose_DODO(self):
