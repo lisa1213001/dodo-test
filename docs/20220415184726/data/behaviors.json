@@ -1,0 +1,76 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "ceshi",
+    "children" : [ {
+      "name" : "这是测试1==1",
+      "children" : [ {
+        "name" : "test_ceshi_001",
+        "uid" : "9041f5c4c0027fe",
+        "parentUid" : "c71a09001c32e1b98383d60f381e871b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650048447074,
+          "stop" : 1650048447074,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c71a09001c32e1b98383d60f381e871b"
+    }, {
+      "name" : "这是测试1<1失败的情况",
+      "children" : [ {
+        "name" : "test_ceshi_002",
+        "uid" : "8fb04f311103309a",
+        "parentUid" : "cf6cda46a4491b5c743a9b8650f8481d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650048447075,
+          "stop" : 1650048447076,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cf6cda46a4491b5c743a9b8650f8481d"
+    } ],
+    "uid" : "9e9f3b16d369c3511f4c22d82e0fb94c"
+  }, {
+    "name" : "swap",
+    "children" : [ {
+      "name" : "输入不超过余额的代币数量",
+      "children" : [ {
+        "name" : "test_swap[USDT-1-DODO]",
+        "uid" : "fddec2d3a63c2377",
+        "parentUid" : "18bc3b9e0d37507bdc09eb4db292224d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650048482257,
+          "stop" : 1650048498049,
+          "duration" : 15792
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'1'", "'USDT'", "'DODO'" ]
+      } ],
+      "uid" : "18bc3b9e0d37507bdc09eb4db292224d"
+    } ],
+    "uid" : "7f90cf20587a3c59803fba93517cc828"
+  } ],
+  "name" : "behaviors"
+}
