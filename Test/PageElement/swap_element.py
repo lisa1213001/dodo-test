@@ -10,11 +10,11 @@ class SwapElement:
         self.driver = driver
     #点击tokenlist
     def find_click_tokenlist1(self):
-        ele = Base.find_element('xpath,/html/body/div[1]/div[1]/div/main/div/div[2]/div[4]/div/div[1]/div/button',self.driver)
+        ele = Base.find_element('xpath,//*[@id="root"]/div[1]/div/main/div/div[2]/div[4]/div/div[1]/div/button',self.driver)
         return ele
 
     def find_tokenlist_search1(self):
-        ele = Base.find_element('xpath,/html/body/div[4]/div[3]/div[2]/div/div[1]/div/input',self.driver)
+        ele = Base.find_element('xpath,//input[@placeholder="输入代币简写或合约地址" or @placeholder="Enter the token symbol or address"]',self.driver)
         return ele
     def find_choose_USDT(self):
         ele = Base.find_element('xpath,//span[@title="USDT Token"]',self.driver)
@@ -28,7 +28,7 @@ class SwapElement:
         return ele
 
     def find_click_tokenlist2(self):
-        ele = Base.find_element('xpath,/html/body/div[1]/div[1]/div/main/div/div[2]/div[5]/div/div/div/button',self.driver)
+        ele = Base.find_element('xpath,//input[@placeholder="输入代币简写或合约地址" or @placeholder="Enter the token symbol or address"]',self.driver)
         return ele
 
     def find_tokenlist_search2(self):
