@@ -1,17 +1,34 @@
 {
-  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "children" : [ {
-    "name" : "ceshi",
+    "name" : "Test.TestCase",
     "children" : [ {
-      "name" : "这是测试1==1",
+      "name" : "test_ceshi",
       "children" : [ {
         "name" : "test_ceshi_001",
-        "uid" : "daa41b5f25896fe",
-        "parentUid" : "c71a09001c32e1b98383d60f381e871b",
+        "uid" : "3f6140d63a9c68e1",
+        "parentUid" : "0ed1d6e23b5bece3a6e524b52d9f373b",
         "status" : "passed",
         "time" : {
-          "start" : 1650036683179,
-          "stop" : 1650036683179,
+          "start" : 1650039144378,
+          "stop" : 1650039144378,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_ceshi_002",
+        "uid" : "be546875dac43ba",
+        "parentUid" : "0ed1d6e23b5bece3a6e524b52d9f373b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650039144380,
+          "stop" : 1650039144380,
           "duration" : 0
         },
         "flaky" : false,
@@ -22,42 +39,17 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "c71a09001c32e1b98383d60f381e871b"
+      "uid" : "0ed1d6e23b5bece3a6e524b52d9f373b"
     }, {
-      "name" : "这是测试1<1失败的情况",
-      "children" : [ {
-        "name" : "test_ceshi_002",
-        "uid" : "bbfcd1fae0a9cbe4",
-        "parentUid" : "cf6cda46a4491b5c743a9b8650f8481d",
-        "status" : "failed",
-        "time" : {
-          "start" : 1650036683180,
-          "stop" : 1650036683181,
-          "duration" : 1
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "cf6cda46a4491b5c743a9b8650f8481d"
-    } ],
-    "uid" : "9e9f3b16d369c3511f4c22d82e0fb94c"
-  }, {
-    "name" : "swap",
-    "children" : [ {
-      "name" : "输入不超过余额的代币数量",
+      "name" : "test_swap",
       "children" : [ {
         "name" : "test_swap[USDT-1-DODO]",
-        "uid" : "b8ea031d1c77861d",
-        "parentUid" : "18bc3b9e0d37507bdc09eb4db292224d",
+        "uid" : "cf78d16b2ab4a439",
+        "parentUid" : "ba5568510311eeabef6f9d1562cb154c",
         "status" : "broken",
         "time" : {
-          "start" : 1650036683208,
-          "stop" : 1650036683208,
+          "start" : 1650039144408,
+          "stop" : 1650039144408,
           "duration" : 0
         },
         "flaky" : false,
@@ -68,9 +60,9 @@
         "retriesStatusChange" : false,
         "parameters" : [ "'1'", "'USDT'", "'DODO'" ]
       } ],
-      "uid" : "18bc3b9e0d37507bdc09eb4db292224d"
+      "uid" : "ba5568510311eeabef6f9d1562cb154c"
     } ],
-    "uid" : "7f90cf20587a3c59803fba93517cc828"
+    "uid" : "Test.TestCase"
   } ],
-  "name" : "behaviors"
+  "name" : "packages"
 }
