@@ -35,6 +35,7 @@ class TestSwap:
         self.driver = webdriver.Chrome(options=chrome_options)
         self.driver.maximize_window()
         dodoex_url = parse_yaml('dodoex.yml','website')['url']
+        self.driver.implicitly_wait(60)
         self.driver.get(dodoex_url)
 
         WalletOperate().connectWallet(self.driver)
@@ -48,6 +49,7 @@ class TestSwap:
     @allure.story("输入不超过余额的代币数量")
     @pytest.mark.parametrize(("token1","amount1","token2"),data)
     def test_swap(self,token1,amount1,token2):
+        sleep(5)
         SwapPage(self.driver).click_tokenlist1()
         SwapPage(self.driver).tokenlist1_search(token1)
         SwapPage(self.driver).click_USDT()
