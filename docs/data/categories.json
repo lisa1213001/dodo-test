@@ -1,18 +1,19 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
       "name" : "AssertionError: assert 1 < 1",
       "children" : [ {
         "name" : "test_ceshi_002",
-        "uid" : "bbfcd1fae0a9cbe4",
+        "uid" : "6c520eb1856f6e4b",
         "parentUid" : "1cafeb52b54d446ea22f8799e50023c2",
         "status" : "failed",
         "time" : {
-          "start" : 1650036683180,
-          "stop" : 1650036683181,
-          "duration" : 1
+          "start" : 1650037256646,
+          "stop" : 1650037256646,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
@@ -31,12 +32,12 @@
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
         "name" : "test_swap[USDT-1-DODO]",
-        "uid" : "b8ea031d1c77861d",
+        "uid" : "6eb1ad63954c769e",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1650036683208,
-          "stop" : 1650036683208,
+          "start" : 1650037256682,
+          "stop" : 1650037256682,
           "duration" : 0
         },
         "flaky" : false,
@@ -50,6 +51,5 @@
       "uid" : "31bb78a6a95ede3f78b260ed048910d8"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ],
-  "name" : "categories"
+  } ]
 }

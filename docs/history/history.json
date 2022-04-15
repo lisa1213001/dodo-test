@@ -9,12 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b8ea031d1c77861d",
+      "uid" : "6eb1ad63954c769e",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
       "time" : {
-        "start" : 1650036683208,
-        "stop" : 1650036683208,
+        "start" : 1650037256682,
+        "stop" : 1650037256682,
         "duration" : 0
       }
     } ]
@@ -29,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "daa41b5f25896fe",
+      "uid" : "1cd2a21bf0d09e59",
       "status" : "passed",
       "time" : {
-        "start" : 1650036683179,
-        "stop" : 1650036683179,
-        "duration" : 0
+        "start" : 1650037256644,
+        "stop" : 1650037256645,
+        "duration" : 1
       }
     } ]
   },
@@ -48,13 +48,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "bbfcd1fae0a9cbe4",
+      "uid" : "6c520eb1856f6e4b",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert 1 < 1",
       "time" : {
-        "start" : 1650036683180,
-        "stop" : 1650036683181,
-        "duration" : 1
+        "start" : 1650037256646,
+        "stop" : 1650037256646,
+        "duration" : 0
       }
     } ]
   }

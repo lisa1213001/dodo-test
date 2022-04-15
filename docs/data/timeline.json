@@ -1,34 +1,18 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
   "children" : [ {
-    "name" : "fv-az78-496",
+    "name" : "fv-az102-366",
     "children" : [ {
-      "name" : "2453-MainThread",
+      "name" : "2413-MainThread",
       "children" : [ {
         "name" : "test_ceshi_002",
-        "uid" : "bbfcd1fae0a9cbe4",
-        "parentUid" : "c0f67eac386ac4ad75c5ee3d5eb60144",
+        "uid" : "6c520eb1856f6e4b",
+        "parentUid" : "925678fc25ba61e0fd9b9343702d338a",
         "status" : "failed",
         "time" : {
-          "start" : 1650036683180,
-          "stop" : 1650036683181,
-          "duration" : 1
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_ceshi_001",
-        "uid" : "daa41b5f25896fe",
-        "parentUid" : "c0f67eac386ac4ad75c5ee3d5eb60144",
-        "status" : "passed",
-        "time" : {
-          "start" : 1650036683179,
-          "stop" : 1650036683179,
+          "start" : 1650037256646,
+          "stop" : 1650037256646,
           "duration" : 0
         },
         "flaky" : false,
@@ -40,12 +24,12 @@
         "parameters" : [ ]
       }, {
         "name" : "test_swap[USDT-1-DODO]",
-        "uid" : "b8ea031d1c77861d",
-        "parentUid" : "c0f67eac386ac4ad75c5ee3d5eb60144",
+        "uid" : "6eb1ad63954c769e",
+        "parentUid" : "925678fc25ba61e0fd9b9343702d338a",
         "status" : "broken",
         "time" : {
-          "start" : 1650036683208,
-          "stop" : 1650036683208,
+          "start" : 1650037256682,
+          "stop" : 1650037256682,
           "duration" : 0
         },
         "flaky" : false,
@@ -55,10 +39,26 @@
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "'1'", "'USDT'", "'DODO'" ]
+      }, {
+        "name" : "test_ceshi_001",
+        "uid" : "1cd2a21bf0d09e59",
+        "parentUid" : "925678fc25ba61e0fd9b9343702d338a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650037256644,
+          "stop" : 1650037256645,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
       } ],
-      "uid" : "c0f67eac386ac4ad75c5ee3d5eb60144"
+      "uid" : "925678fc25ba61e0fd9b9343702d338a"
     } ],
-    "uid" : "d719a15d0b283f60b02aec46e310d8f8"
-  } ],
-  "name" : "timeline"
+    "uid" : "10b0cb6c2e366d15447165a05256818b"
+  } ]
 }

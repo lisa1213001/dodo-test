@@ -1,18 +1,19 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
   "children" : [ {
     "name" : "ceshi",
     "children" : [ {
       "name" : "这是测试1==1",
       "children" : [ {
         "name" : "test_ceshi_001",
-        "uid" : "daa41b5f25896fe",
+        "uid" : "1cd2a21bf0d09e59",
         "parentUid" : "c71a09001c32e1b98383d60f381e871b",
         "status" : "passed",
         "time" : {
-          "start" : 1650036683179,
-          "stop" : 1650036683179,
-          "duration" : 0
+          "start" : 1650037256644,
+          "stop" : 1650037256645,
+          "duration" : 1
         },
         "flaky" : false,
         "newFailed" : false,
@@ -27,13 +28,13 @@
       "name" : "这是测试1<1失败的情况",
       "children" : [ {
         "name" : "test_ceshi_002",
-        "uid" : "bbfcd1fae0a9cbe4",
+        "uid" : "6c520eb1856f6e4b",
         "parentUid" : "cf6cda46a4491b5c743a9b8650f8481d",
         "status" : "failed",
         "time" : {
-          "start" : 1650036683180,
-          "stop" : 1650036683181,
-          "duration" : 1
+          "start" : 1650037256646,
+          "stop" : 1650037256646,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
@@ -52,12 +53,12 @@
       "name" : "输入不超过余额的代币数量",
       "children" : [ {
         "name" : "test_swap[USDT-1-DODO]",
-        "uid" : "b8ea031d1c77861d",
+        "uid" : "6eb1ad63954c769e",
         "parentUid" : "18bc3b9e0d37507bdc09eb4db292224d",
         "status" : "broken",
         "time" : {
-          "start" : 1650036683208,
-          "stop" : 1650036683208,
+          "start" : 1650037256682,
+          "stop" : 1650037256682,
           "duration" : 0
         },
         "flaky" : false,
@@ -71,6 +72,5 @@
       "uid" : "18bc3b9e0d37507bdc09eb4db292224d"
     } ],
     "uid" : "7f90cf20587a3c59803fba93517cc828"
-  } ],
-  "name" : "behaviors"
+  } ]
 }
