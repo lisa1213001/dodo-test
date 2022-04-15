@@ -51,10 +51,12 @@ class TestSwap:
         SwapPage(self.driver).click_tokenlist1()
         SwapPage(self.driver).tokenlist1_search(token1)
         SwapPage(self.driver).click_USDT()
+        SwapPage(self.driver).close_modal()
         SwapPage(self.driver).input_USDT(amount1)
         SwapPage(self.driver).click_tokenlist2()
         SwapPage(self.driver).tokenlist2_search(token2)
         SwapPage(self.driver).click_DODO()
+        SwapPage(self.driver).close_modal()
         SwapPage(self.driver).click_button()
         WalletOperate().transactionFromMetamask(self.driver)
 

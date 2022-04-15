@@ -29,3 +29,5 @@ class SwapPage:
 
     def click_button(self):
         self.swap_page.find_swap_button().click()
+    def close_modal(self):
+        self.swap_page.find_close_icon().click()
