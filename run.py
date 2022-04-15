@@ -12,6 +12,8 @@ import datetime
 #执行./Test/TestCase/下的所有测试用例 test_*.py 可以手动修改选定只执行那些测试用例
 if __name__ == '__main__':
     now=datetime.datetime.now().strftime('%Y%m%d%H%M%S') 
-    pytest.main(['-s','./Test/TestCase/','--alluredir',f'./Report/{now}'])
+    cwd = os.getcwd()
+    report_dir = os.path.join(cwd, f'Report/{now}')
+    pytest.main(['-s','./Test/TestCase/','--alluredir',report_dir])
     print(f'报告路径：https://github.com/lisa1213001/dodo-test/tree/main/Report/{now}')
     # os.system('allure serve ./Report/allure_report')
