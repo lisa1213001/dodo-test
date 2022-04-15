@@ -1,0 +1,64 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az102-366",
+    "children" : [ {
+      "name" : "2475-MainThread",
+      "children" : [ {
+        "name" : "test_swap[USDT-1-DODO]",
+        "uid" : "4b170a896e48ed8e",
+        "parentUid" : "c1e6ce56dc72156b021ed159d7676f60",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650043996933,
+          "stop" : 1650044000734,
+          "duration" : 3801
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'1'", "'USDT'", "'DODO'" ]
+      }, {
+        "name" : "test_ceshi_001",
+        "uid" : "2ccb7ec344dc721d",
+        "parentUid" : "c1e6ce56dc72156b021ed159d7676f60",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650043958523,
+          "stop" : 1650043958523,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_ceshi_002",
+        "uid" : "1977163678244670",
+        "parentUid" : "c1e6ce56dc72156b021ed159d7676f60",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650043958525,
+          "stop" : 1650043958525,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c1e6ce56dc72156b021ed159d7676f60"
+    } ],
+    "uid" : "10b0cb6c2e366d15447165a05256818b"
+  } ],
+  "name" : "timeline"
+}
