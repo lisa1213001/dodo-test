@@ -22,6 +22,10 @@ class TestSwap:
     def setup_class(self):
         #实例化一个启动参数对象
         chrome_options = Options()
+        chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-setuid-sandbox")
+         
         #添加小狐狸插件
         chrome_options.add_extension(extension_path)
         #防止浏览器闪退
