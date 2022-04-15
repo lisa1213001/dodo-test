@@ -1,5 +1,6 @@
 import os
 import pytest
+import datetime
 
 """
 执行测试用例并生成、并查看报告  主入口
@@ -10,5 +11,7 @@ import pytest
 
 #执行./Test/TestCase/下的所有测试用例 test_*.py 可以手动修改选定只执行那些测试用例
 if __name__ == '__main__':
-    pytest.main(['-s','./Test/TestCase/','--alluredir','./Report/allure_report'])
-    os.system('allure serve ./Report/allure_report')
+    now=datetime.datetime.now().strftime('%Y%m%d%H%M%S') 
+    pytest.main(['-s','./Test/TestCase/','--alluredir',f'./Report/{now}'])
+    print(f'报告路径：https://github.com/lisa1213001/dodo-test/Report/{now}')
+    # os.system('allure serve ./Report/allure_report')
