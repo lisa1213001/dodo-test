@@ -10,7 +10,7 @@ class SwapElement:
         self.driver = driver
     #点击tokenlist
     def find_click_tokenlist1(self):
-        ele = Base.find_element('xpath,//*[@id="root"]/div[1]/div/main/div/div[2]/div[4]/div/div[1]/div/button/span',self.driver)
+        ele = Base.find_element('xpath,/html/body/div[1]/div[1]/div/main/div/div[2]/div[4]/div/div[1]/div/button',self.driver)
         return ele
 
     def find_tokenlist_search1(self):
@@ -28,7 +28,7 @@ class SwapElement:
         return ele
 
     def find_click_tokenlist2(self):
-        ele = Base.find_element('xpath,//*[@id="root"]/div[1]/div/main/div/div[2]/div[5]/div/div/div',self.driver)
+        ele = Base.find_element('xpath,/html/body/div[1]/div[1]/div/main/div/div[2]/div[5]/div/div/div/button',self.driver)
         return ele
 
     def find_tokenlist_search2(self):
