@@ -1,0 +1,61 @@
+{
+  "6e5717e4280b1209cc77531052515ce7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b8ea031d1c77861d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1650036683208,
+        "stop" : 1650036683208,
+        "duration" : 0
+      }
+    } ]
+  },
+  "f900d883188f66824ce8c68da2da2e8e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "daa41b5f25896fe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650036683179,
+        "stop" : 1650036683179,
+        "duration" : 0
+      }
+    } ]
+  },
+  "ab0990ae58dd4c039f227e0eb85aedc7" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bbfcd1fae0a9cbe4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 1 < 1",
+      "time" : {
+        "start" : 1650036683180,
+        "stop" : 1650036683181,
+        "duration" : 1
+      }
+    } ]
+  }
+}

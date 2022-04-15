@@ -1,0 +1,66 @@
+{
+  "uid" : "daa41b5f25896fe",
+  "name" : "test_ceshi_001",
+  "fullName" : "Test.TestCase.test_ceshi.TestCeshi#test_ceshi_001",
+  "historyId" : "f900d883188f66824ce8c68da2da2e8e",
+  "time" : {
+    "start" : 1650036683179,
+    "stop" : 1650036683179,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "这是测试1==1"
+  }, {
+    "name" : "feature",
+    "value" : "ceshi"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Test.TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_ceshi"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCeshi"
+  }, {
+    "name" : "host",
+    "value" : "fv-az78-496"
+  }, {
+    "name" : "thread",
+    "value" : "2453-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Test.TestCase.test_ceshi"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "daa41b5f25896fe.json",
+  "parameterValues" : [ ]
+}
