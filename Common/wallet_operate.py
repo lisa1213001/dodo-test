@@ -38,7 +38,7 @@ class WalletOperate:
 
        # 切换到metamask窗口
        driver.switch_to.window(driver.window_handles[0])
-       Base.find_element('xpath,//button[text()="开始使用"]',driver).click()
+       Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div/div/button',driver).click()
        Base.find_element('xpath,//button[text()="导入钱包"]',driver).click()
        Base.find_element('xpath,//button[text()="我同意"]',driver).click()
        mnemonic_list = getSeedPhrase(filename,address)
