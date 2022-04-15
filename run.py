@@ -13,7 +13,7 @@ import datetime
 if __name__ == '__main__':
     now=datetime.datetime.now().strftime('%Y%m%d%H%M%S') 
     cwd = os.getcwd()
-    report_dir = os.path.join(cwd, f'Report/{now}')
+    report_dir = os.path.join(cwd, f'docs/{now}')
     pytest.main(['-s','./Test/TestCase/','--alluredir',report_dir])
-    print(f'报告路径：https://github.com/lisa1213001/dodo-test/tree/main/Report/{now}')
+    print(f'报告路径：https://lisa1213001.github.io/dodo-test/{now}')
     os.system(f'allure generate {report_dir} -o {report_dir} --clean')
