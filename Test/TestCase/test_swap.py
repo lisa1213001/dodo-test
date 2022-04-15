@@ -25,7 +25,9 @@ class TestSwap:
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-setuid-sandbox")
-         
+        chrome_options.add_argument("--lang=zh-cn")
+
+
         #添加小狐狸插件
         chrome_options.add_extension(extension_path)
         #防止浏览器闪退

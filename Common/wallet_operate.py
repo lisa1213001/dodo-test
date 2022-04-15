@@ -38,9 +38,9 @@ class WalletOperate:
 
        # 切换到metamask窗口
        driver.switch_to.window(driver.window_handles[0])
-       Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div/div/button',driver).click()
-       Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div/div[2]/div/div[2]/div[1]/button',driver).click()
-       Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div/div/div[5]/div[1]/footer/button[2]',driver).click()
+       Base.find_element('xpath,//button[text()="开始使用"]',driver).click()
+       Base.find_element('xpath,//button[text()="导入钱包"]',driver).click()
+       Base.find_element('xpath,//button[text()="我同意"]',driver).click()
        mnemonic_list = getSeedPhrase(filename,address)
 
        for i in range(12):
@@ -49,8 +49,8 @@ class WalletOperate:
        Base.find_element('id,password',driver).send_keys(password)
        Base.find_element('id,confirm-password',driver).send_keys(password)
        Base.find_element('id,create-new-vault__terms-checkbox',driver).click()
-       Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div/div[2]/form/button',driver).click()
-       Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div/button',driver).click()
+       Base.find_element('xpath,//button[text()="导入"]',driver).click()
+       Base.find_element('xpath,//button[text()="全部完成"]',driver).click()
 
     # DODO连接钱包
     def connectWallet(self,driver):
