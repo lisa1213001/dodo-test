@@ -1,11 +1,11 @@
 {
-  "uid" : "19dc5ecc234f4992",
+  "uid" : "82096ee82deb7dad",
   "name" : "test_ceshi_001",
   "fullName" : "Test.TestCase.test_ceshi.TestCeshi#test_ceshi_001",
   "historyId" : "f900d883188f66824ce8c68da2da2e8e",
   "time" : {
-    "start" : 1650037704933,
-    "stop" : 1650037704933,
+    "start" : 1650038315833,
+    "stop" : 1650038315833,
     "duration" : 0
   },
   "status" : "passed",
@@ -18,11 +18,11 @@
   "beforeStages" : [ ],
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "story",
-    "value" : "这是测试1==1"
-  }, {
     "name" : "feature",
     "value" : "ceshi"
+  }, {
+    "name" : "story",
+    "value" : "这是测试1==1"
   }, {
     "name" : "parentSuite",
     "value" : "Test.TestCase"
@@ -37,7 +37,7 @@
     "value" : "fv-az102-366"
   }, {
     "name" : "thread",
-    "value" : "2443-MainThread"
+    "value" : "2523-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -61,6 +61,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "19dc5ecc234f4992.json",
+  "source" : "82096ee82deb7dad.json",
   "parameterValues" : [ ]
 }

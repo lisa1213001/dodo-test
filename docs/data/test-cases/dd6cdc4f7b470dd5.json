@@ -1,16 +1,16 @@
 {
-  "uid" : "29b2461b73d501b5",
+  "uid" : "dd6cdc4f7b470dd5",
   "name" : "test_swap[USDT-1-DODO]",
   "fullName" : "Test.TestCase.test_swap.TestSwap#test_swap",
   "historyId" : "6e5717e4280b1209cc77531052515ce7",
   "time" : {
-    "start" : 1650037704966,
-    "stop" : 1650037704966,
+    "start" : 1650038315864,
+    "stop" : 1650038315864,
     "duration" : 0
   },
   "status" : "broken",
   "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
-  "statusTrace" : "self = <class 'Test.TestCase.test_swap.TestSwap'>\n\n    def setup_class(self):\n        #实例化一个启动参数对象\n        chrome_options = Options()\n        chrome_options.add_argument(\"--disable-gpu\")\n        chrome_options.add_argument(\"--no-sandbox\")\n        chrome_options.add_argument(\"--disable-setuid-sandbox\")\n        chrome_options.add_argument(\"--lang=zh-cn\")\n        chrome_options.add_argument('lang=zh_CN.UTF-8')\n    \n        #添加小狐狸插件\n        chrome_options.add_extension(extension_path)\n        #防止浏览器闪退\n        chrome_options.add_experimental_option(\"detach\",True)\n        self.driver = webdriver.Chrome(options=chrome_options)\n        self.driver.maximize_window()\n        dodoex_url = parse_yaml('dodoex.yml','website')['url']\n        self.driver.get(dodoex_url)\n    \n>       WalletOperate().connectWallet(self.driver)\n\nTest/TestCase/test_swap.py:40: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nCommon/wallet_operate.py:59: in connectWallet\n    Base.find_element('xpath,//button[text()=\"下一步\"]',driver).click()\nBase/base.py:29: in find_element\n    element = WebDriverWait(driver, 30, 1).until(EC.presence_of_element_located((by, value)))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"831637ef97bc34fbcd688ee88ca2475d\")>\nmethod = <selenium.webdriver.support.expected_conditions.presence_of_element_located object at 0x7f36fa2bd190>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/selenium/webdriver/support/wait.py:80: TimeoutException",
+  "statusTrace" : "self = <class 'Test.TestCase.test_swap.TestSwap'>\n\n    def setup_class(self):\n        #实例化一个启动参数对象\n        chrome_options = Options()\n        chrome_options.add_argument(\"--disable-gpu\")\n        chrome_options.add_argument(\"--no-sandbox\")\n        chrome_options.add_argument(\"--disable-setuid-sandbox\")\n        chrome_options.add_argument(\"--lang=zh-cn\")\n        chrome_options.add_argument('lang=zh_CN.UTF-8')\n    \n        #添加小狐狸插件\n        chrome_options.add_extension(extension_path)\n        #防止浏览器闪退\n        chrome_options.add_experimental_option(\"detach\",True)\n        self.driver = webdriver.Chrome(options=chrome_options)\n        self.driver.maximize_window()\n        dodoex_url = parse_yaml('dodoex.yml','website')['url']\n        self.driver.get(dodoex_url)\n    \n>       WalletOperate().connectWallet(self.driver)\n\nTest/TestCase/test_swap.py:40: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nCommon/wallet_operate.py:59: in connectWallet\n    Base.find_element('xpath,//button[text()=\"下一步\"]',driver).click()\nBase/base.py:29: in find_element\n    element = WebDriverWait(driver, 30, 1).until(EC.presence_of_element_located((by, value)))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"51f598f1d97c0ef7843ab6631379fbcb\")>\nmethod = <selenium.webdriver.support.expected_conditions.presence_of_element_located object at 0x7f63a61b3190>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/selenium/webdriver/support/wait.py:80: TimeoutException",
   "flaky" : false,
   "newFailed" : false,
   "newBroken" : false,
@@ -20,9 +20,9 @@
   "beforeStages" : [ {
     "name" : "_xunit_setup_class_fixture_TestSwap",
     "time" : {
-      "start" : 1650037704966,
-      "stop" : 1650037759734,
-      "duration" : 54768
+      "start" : 1650038315864,
+      "stop" : 1650038368222,
+      "duration" : 52358
     },
     "status" : "broken",
     "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
@@ -37,11 +37,11 @@
   } ],
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "feature",
-    "value" : "swap"
-  }, {
     "name" : "story",
     "value" : "输入不超过余额的代币数量"
+  }, {
+    "name" : "feature",
+    "value" : "swap"
   }, {
     "name" : "parentSuite",
     "value" : "Test.TestCase"
@@ -56,7 +56,7 @@
     "value" : "fv-az102-366"
   }, {
     "name" : "thread",
-    "value" : "2443-MainThread"
+    "value" : "2523-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -93,6 +93,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "29b2461b73d501b5.json",
+  "source" : "dd6cdc4f7b470dd5.json",
   "parameterValues" : [ "'1'", "'USDT'", "'DODO'" ]
 }
