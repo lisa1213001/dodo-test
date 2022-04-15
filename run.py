@@ -1,6 +1,10 @@
 import os
 import pytest
 import datetime
+from pyvirtualdisplay import Display
+
+display = Display(visible=0, size=(800, 600))
+display.start()
 
 """
 执行测试用例并生成、并查看报告  主入口
@@ -17,3 +21,4 @@ if __name__ == '__main__':
     pytest.main(['-s','./Test/TestCase/','--alluredir',report_dir])
     print(f'报告路径：https://lisa1213001.github.io/dodo-test/{now}')
     os.system(f'allure generate {report_dir} -o {report_dir} --clean')
+    display.stop()
