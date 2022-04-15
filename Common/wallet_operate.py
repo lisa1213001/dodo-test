@@ -51,6 +51,7 @@ class WalletOperate:
        Base.find_element('id,create-new-vault__terms-checkbox',driver).click()
        Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div/div[2]/form/button',driver).click()
        Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div/button',driver).click()
+       print("metamask setup succeed")
 
     # DODO连接钱包
     def connectWallet(self,driver):
