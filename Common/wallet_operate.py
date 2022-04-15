@@ -56,34 +56,37 @@ class WalletOperate:
     # DODO连接钱包
     def connectWallet(self,driver):
         self.metamaskSetup(driver)
-        Base.find_element('xpath,//button[text()="下一步"]',driver).click()
-        Base.find_element('xpath,//button[text()="连接"]',driver).click()
+        Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div[2]/div[3]/div[2]/button[2]',driver).click()
+        Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div[2]/div[2]/div[2]/footer/button[2]',driver).click()
         Base.find_element('xpath,//*[@id="popover-content"]/div/div/section/header/div/button',driver).click()
         driver.close()
         driver.switch_to.window(driver.window_handles[0])
 
     # 切换网络
-    def changeMetamaskNetwork(self,driver,network="Rinkeby 测试网络"):
+    def changeMetamaskNetwork(self,driver,network='Rinkeby 测试网络'):
         """打开一个无标题新窗口，这时候新窗口的句柄下标为1，切换到新窗口
         打开metamask页面，然后就可以进行元素定位切换网路
         以太坊 Ethereum 主网络
-        Ropsten 测试网络
-        Kovan 测试网络
         Rinkeby 测试网络
-        Goerli 测试网络
+        目前只写了两种，之后需要加
         """
+        testlist = {
+            '以太坊 Ethereum 主网络':'//*[@id="app-content"]/div/div[2]/div/div[2]/li[1]/span',
+            'Rinkeby 测试网络':'//*[@id="app-content"]/div/div[2]/div/div[2]/li[4]/span'
+        }
 
         #self.connectWallet(driver) 需要先连接钱包
         driver.execute_script("window.open();")
         driver.switch_to.window(driver.window_handles[1])
         driver.get(f'chrome-extension://{extention_id}/home.html')
 
-        Base.find_element('xpath,//span[text()="以太坊 Ethereum 主网络"]',driver).click()
-        Base.find_element('xpath,//a[text()="显示/隐藏"]',driver).click()
+        Base.find_element('xpath,//*[@id="app-content"]/div/div[1]/div/div[2]/div[1]/div/span',driver).click()
+        Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div[1]/div[3]/span/a',driver).click()
         Base.find_element('xpath,//*[@id="app-content"]/div/div[3]/div/div[2]/div[2]/div[2]/div[7]/div[2]/div/div/div[1]/div[2]/div',driver).click()
         Base.find_element('xpath,//*[@id="app-content"]/div/div[3]/div/div[2]/div[2]/div[2]/div[7]/div[2]/div/div/div[1]/div[2]/div',driver).click()
-        Base.find_element('xpath,//span[text()="以太坊 Ethereum 主网络"]',driver).click()
-        Base.find_element(f'xpath,//span[text()="{network}"]',driver).click()
+        Base.find_element('xpath,//*[@id="app-content"]/div/div[1]/div/div[2]/div[1]/div/span',driver).click()
+        network = testlist[network]
+        Base.find_element(f'xpath,{network}',driver).click()
         driver.close()
         driver.switch_to.window(driver.window_handles[0])
         driver.refresh()
@@ -96,23 +99,23 @@ class WalletOperate:
         driver.execute_script('window.open();')
         driver.switch_to.window(driver.window_handles[1])
         driver.get('https:///chainlist.org')
-        Base.find_element('xpath,//h5[text()="Connect Wallet"]',driver).click()
+        Base.find_element('xpath,//*[@id="__next"]/div[1]/main/div/div[2]/div[1]/button',driver).click()
         driver.execute_script("window.open();")
         driver.switch_to.window(driver.window_handles[2])
         driver.get(f'chrome-extension://{extention_id}/popup.html')
-        Base.find_element('xpath,//button[text()="下一步"]', driver).click()
-        Base.find_element('xpath,//button[text()="连接"]', driver).click()
+        Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div[2]/div[3]/div[2]/button[2]', driver).click()
+        Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div[2]/div[2]/div[2]/footer/button[2]', driver).click()
         driver.close()
         driver.switch_to.window(driver.window_handles[1])
-        Base.find_element('xpath,//span[text()="Testnets"]', driver).click()
+        Base.find_element('xpath,//*[@id="__next"]/div[1]/main/div/div[2]/div[1]/div[2]/label/span[1]/span[1]/span[1]/input', driver).click()
         Base.find_element('xpath,//*[@id="__next"]/div[1]/main/div/div[2]/div[1]/div[1]/div/div/div/input', driver).send_keys(add_network)
         sleep(3)
-        Base.find_element('xpath,//span[text()="Add to Metamask"]', driver).click()
+        Base.find_element('xpath,//*[@id="__next"]/div[1]/main/div/div[2]/div[2]/div/div[3]/button/span[1]', driver).click()
         driver.execute_script("window.open();")
         driver.switch_to.window(driver.window_handles[2])
         driver.get(f'chrome-extension://{extention_id}/popup.html')
-        Base.find_element('xpath,//button[text()="批准"]', driver).click()
-        Base.find_element('xpath,//button[text()="切换网络"]', driver).click()
+        Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div[2]/div/button[2]', driver).click()
+        Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div[2]/div[2]/button[2]', driver).click()
         driver.close()
         driver.switch_to.window(driver.window_handles[1])
         driver.close()
@@ -121,19 +124,31 @@ class WalletOperate:
 
 
 
-    # 确认/取消授权、交易
+    # 确认/取消交易
     def transactionFromMetamask(self,driver,comfirm="True"):
         sleep(3)
         driver.execute_script("window.open();")
         driver.switch_to.window(driver.window_handles[1])
         driver.get(f'chrome-extension://{extention_id}/popup.html')
         if comfirm == "True":
-            Base.find_element('xpath,//button[text()="确认"]', driver).click()
+            Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div[5]/div[3]/footer/button[2]', driver).click()
         if comfirm == "False":
-            Base.find_element('xpath,//button[text()="拒绝"]', driver).click()
+            Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div[5]/div[3]/footer/button[1]', driver).click()
         driver.close()
         driver.switch_to.window(driver.window_handles[0])
 
+    # 确认/取消授权
+    def approveFromMetamask(self,driver,approve="True"):
+        sleep(3)
+        driver.execute_script("window.open();")
+        driver.switch_to.window(driver.window_handles[1])
+        driver.get(f'chrome-extension://{extention_id}/popup.html')
+        if approve == "True":
+            Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div[6]/footer/button[2]', driver).click()
+        if approve == "False":
+            Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div[6]/footer/button[1]', driver).click()
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
     # 确认/取消签名
     def confirmSign(self,driver,comfirm="True"):
         sleep(3)
@@ -141,9 +156,9 @@ class WalletOperate:
         driver.switch_to.window(driver.window_handles[1])
         driver.get(f'chrome-extension://{extention_id}/popup.html')
         if comfirm == "True":
-            Base.find_element('xpath,//button[text()="签名"]', driver).click()
+            Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div[4]/button[2]', driver).click()
         if comfirm == "False":
-            Base.find_element('xpath,//button[text()="取消"]', driver).click()
+            Base.find_element('xpath,//*[@id="app-content"]/div/div[2]/div/div[4]/button[1]', driver).click()
         driver.close()
         driver.switch_to.window(driver.window_handles[0])
 

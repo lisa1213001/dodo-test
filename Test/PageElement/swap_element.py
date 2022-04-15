@@ -33,9 +33,9 @@ class SwapElement:
         return ele
 
     def find_choose_DODO(self):
-        ele = Base.find_element('xpath,//span[text()="DODO"]',self.driver)
+        ele = Base.find_element('xpath,/html/body/div[3]/div[3]/div[2]/div/div[2]/div/div[1]/div[3]/div[1]/div[1]/span',self.driver)
         return ele
     def find_swap_button(self):
-        ele = Base.find_element('xpath,//button[text()="确认交易"]',self.driver)
+        ele = Base.find_element('xpath,//*[@id="root"]/div[1]/div/main/div/div[2]/div[6]/button[2]',self.driver)
         return ele
 
