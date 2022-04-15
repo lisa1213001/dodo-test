@@ -3,7 +3,7 @@ import pytest
 import datetime
 from pyvirtualdisplay import Display
 
-display = Display(visible=0, size=(800, 600))
+display = Display(visible=0, size=(1960, 1080))
 display.start()
 
 """
