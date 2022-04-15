@@ -16,4 +16,4 @@ if __name__ == '__main__':
     report_dir = os.path.join(cwd, f'Report/{now}')
     pytest.main(['-s','./Test/TestCase/','--alluredir',report_dir])
     print(f'报告路径：https://github.com/lisa1213001/dodo-test/tree/main/Report/{now}')
-    # os.system('allure serve ./Report/allure_report')
+    os.system(f'allure generate {report_dir} -o {report_dir} --clean')
