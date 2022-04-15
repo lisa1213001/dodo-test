@@ -1,0 +1,76 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Test.TestCase",
+    "children" : [ {
+      "name" : "test_ceshi",
+      "children" : [ {
+        "name" : "TestCeshi",
+        "children" : [ {
+          "name" : "test_ceshi_001",
+          "uid" : "204f53ca2519a13d",
+          "parentUid" : "1d96dfef1f29a2a8d69e1c983499e522",
+          "status" : "passed",
+          "time" : {
+            "start" : 1650044181928,
+            "stop" : 1650044181928,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_ceshi_002",
+          "uid" : "da9a4f772ef96e3d",
+          "parentUid" : "1d96dfef1f29a2a8d69e1c983499e522",
+          "status" : "failed",
+          "time" : {
+            "start" : 1650044181929,
+            "stop" : 1650044181930,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "1d96dfef1f29a2a8d69e1c983499e522"
+      } ],
+      "uid" : "a7167e0fadc659fe4e6c9ae7eee31377"
+    }, {
+      "name" : "test_swap",
+      "children" : [ {
+        "name" : "TestSwap",
+        "children" : [ {
+          "name" : "test_swap[USDT-1-DODO]",
+          "uid" : "c84428ef90018505",
+          "parentUid" : "5ced0b7a15daaf9831c63240d99e9c37",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650044212219,
+            "stop" : 1650044243224,
+            "duration" : 31005
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "'1'", "'USDT'", "'DODO'" ]
+        } ],
+        "uid" : "5ced0b7a15daaf9831c63240d99e9c37"
+      } ],
+      "uid" : "be0323a06acf36c6142e670d067e0315"
+    } ],
+    "uid" : "42e85555721eb07be8938e290431fb28"
+  } ],
+  "name" : "suites"
+}
