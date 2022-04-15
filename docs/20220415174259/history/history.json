@@ -1,0 +1,61 @@
+{
+  "6e5717e4280b1209cc77531052515ce7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ee2ef268cd9e9144",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class=\"sc-furwcr dgGChv MuiButtonBase-root Mui-disabled contained\" tabindex=\"-1\" type=\"button\" disabled=\"\">...</button> is not clickable at point (1097, 597). Other element would receive the click: <div class=\"sc-hKwDye dGdwre MuiBox-root\">...</div>\n  (Session info: chrome=100.0.4896.127)",
+      "time" : {
+        "start" : 1650044614833,
+        "stop" : 1650044620148,
+        "duration" : 5315
+      }
+    } ]
+  },
+  "f900d883188f66824ce8c68da2da2e8e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ee28f525ca1bada8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650044580113,
+        "stop" : 1650044580113,
+        "duration" : 0
+      }
+    } ]
+  },
+  "ab0990ae58dd4c039f227e0eb85aedc7" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2cd949ecb713b6d6",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 1 < 1",
+      "time" : {
+        "start" : 1650044580115,
+        "stop" : 1650044580115,
+        "duration" : 0
+      }
+    } ]
+  }
+}
