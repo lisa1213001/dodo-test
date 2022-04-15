@@ -26,7 +26,7 @@ class TestSwap:
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-setuid-sandbox")
         chrome_options.add_argument("--lang=zh-cn")
-
+        chrome_options.add_argument('lang=zh_CN.UTF-8')
 
         #添加小狐狸插件
         chrome_options.add_extension(extension_path)
