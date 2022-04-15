@@ -1,0 +1,31 @@
+[ {
+  "uid" : "fb263fbf7488336a",
+  "name" : "test_ceshi_001",
+  "time" : {
+    "start" : 1650045552093,
+    "stop" : 1650045552093,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "410112abb6c9d77d",
+  "name" : "test_swap[USDT-1-DODO]",
+  "time" : {
+    "start" : 1650045585463,
+    "stop" : 1650045588536,
+    "duration" : 3073
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "40dce3bf2bf049f2",
+  "name" : "test_ceshi_002",
+  "time" : {
+    "start" : 1650045552095,
+    "stop" : 1650045552095,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]
