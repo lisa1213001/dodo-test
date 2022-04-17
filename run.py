@@ -32,7 +32,7 @@ def stop_virtualdisplay_ifneeded():
 #执行./Test/TestCase/下的所有测试用例 test_*.py 可以手动修改选定只执行那些测试用例
 if __name__ == '__main__':
     start_virtualdisplay_ifneeded()
-    now=datetime.datetime.now().strftime('%Y%m%d%H%M%S') 
+    now=datetime.datetime.now().strftime('%Y_%m_%d_%H_%M_%S')
     cwd = os.getcwd()
     report_dir = os.path.join(cwd, f'Report/{now}')
     report_html_dir = os.path.join(cwd, f'docs/{now}')
