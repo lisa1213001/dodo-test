@@ -1,0 +1,30 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 1 < 1",
+      "children" : [ {
+        "name" : "test_ceshi_002",
+        "uid" : "b288b60043a58527",
+        "parentUid" : "1cafeb52b54d446ea22f8799e50023c2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650181552007,
+          "stop" : 1650181552007,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1cafeb52b54d446ea22f8799e50023c2"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
