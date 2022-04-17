@@ -31,6 +31,7 @@ def stop_virtualdisplay_ifneeded():
 
 #执行./Test/TestCase/下的所有测试用例 test_*.py 可以手动修改选定只执行那些测试用例
 if __name__ == '__main__':
+    #本地不加载虚拟屏幕
     start_virtualdisplay_ifneeded()
     now=datetime.datetime.now().strftime('%Y_%m_%d_%H_%M_%S')
     cwd = os.getcwd()
