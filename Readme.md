@@ -17,7 +17,10 @@ Python使用3.x的版本，依赖的安装：
 
 ```bash
 pip install pytest PyYAML selenium allure-pytest -i http://mirrors.aliyun.com/pypi/simple/
+# 或使用requirements.txt
+pip install -r requirements.txt -i http://mirrors.aliyun.com/pypi/simple/
 ```
+
 
 框架使用allure生成测试报告，需要安装allure和java环境，步骤如下：
 

@@ -1,0 +1,5 @@
+pytest==7.1.1
+pyvirtualdisplay==3.0
+PyYAML==6.0
+selenium==4.1.3
+allure-pytest==2.9.45

@@ -46,7 +46,7 @@ jobs:
             && sudo apt install -y xvfb \
             && chromedriver --version
       - name: Run test 
-        run: python run.py
+        run: python run.py --githubaction
       - name: Commit files
         run: |
           git add docs -f
