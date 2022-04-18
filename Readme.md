@@ -16,9 +16,8 @@ git clone https://github.com/lisa1213001/dodo-test.git
 Python使用3.x的版本，依赖的安装：
 
 ```bash
-pip install pytest PyYAML selenium allure-pytest -i http://mirrors.aliyun.com/pypi/simple/
-# 或使用requirements.txt
-pip install -r requirements.txt -i http://mirrors.aliyun.com/pypi/simple/
+使用requirements.txt
+pip install -r requirements.txt 
 ```
 
 
